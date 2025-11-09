@@ -353,11 +353,11 @@ local function run(event)
 	if update == true then
 						
 		lcd.drawText(32,1,gpsFIX ,SMLSIZE + INVERS)	
-		lcd.drawText(30+(8*5),1,"Save GPX: " ,SMLSIZE + INVERS)
+		lcd.drawText(25+(8*5),1,"Save GPX: " ,SMLSIZE + INVERS)
 		if waypoints_recorded > 0 then
-			lcd.drawText(32+(6*5)+(10*5),1,waypoints_recorded ,SMLSIZE + INVERS)
+			lcd.drawText(27+(6*5)+(10*5),1,waypoints_recorded ,SMLSIZE + INVERS)
 		else
-			lcd.drawText(32+(6*5)+(10*5),1,result ,SMLSIZE + INVERS)
+			lcd.drawText(27+(6*5)+(10*5),1,result ,SMLSIZE + INVERS)
 		end		
 		lcd.drawText(22,14, gpsSATS, SMLSIZE)		
 		lcd.drawText(60,10, gpsDtH, SMLSIZE)
@@ -379,11 +379,11 @@ local function run(event)
 	elseif update == false then
 		
 		lcd.drawText(32,1,"no GPS" ,SMLSIZE + INVERS)
-		lcd.drawText(30+(8*5),1,"Save GPX: " ,SMLSIZE + INVERS)
+		lcd.drawText(25+(8*5),1,"Save GPX: " ,SMLSIZE + INVERS)
 		if waypoints_recorded > 0 then
-			lcd.drawText(32+(6*5)+(10*5),1,waypoints_recorded ,SMLSIZE + INVERS)
+			lcd.drawText(27+(6*5)+(10*5),1,waypoints_recorded ,SMLSIZE + INVERS)
 		else
-			lcd.drawText(32+(6*5)+(10*5),1,result ,SMLSIZE + INVERS)
+			lcd.drawText(27+(6*5)+(10*5),1,result ,SMLSIZE + INVERS)
 		end
 		lcd.drawText(22,14, gpsSATS, SMLSIZE + INVERS + BLINK )		
 		lcd.drawText(60,10, gpsDtH , SMLSIZE + INVERS + BLINK)
